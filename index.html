@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body onresize="setMenu()">
+
+    <header class="header" id="header">
+        <div class="header-left">
+            <img src="plant.png" alt="plant icon">
+            <p class="name">Plantsitting.de</p>
+        </div>
+
+
+        <div class="hamburgerIcon">
+            <a class="active" href="#login">
+                <i id="userIcon" class="fas fa-user fa-2x"></i>
+            </a>
+            <a class="active" href="javascript:void(0);" onclick="mobileMenu()">
+
+
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </div>
+        <nav id="main-menu" class="main-menu">
+            <div class="searchSet">
+                <input class="search" type="text" placeholder="Search..">
+                <button class="searchButton" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn" onClick="mobileMenuAbout()">About
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="dropdown-content1">
+
+                    <a href="#" class="active">About us</a>
+
+                    <a href="#" class="active">This is how Plantsitting.de works</a>
+
+                    <a href="#" class="active">Help Center</a>
+                    <a href="#" class="active">Contact Us</a>
+
+                </div>
+            </div>
+            </div>
+            <li class="menuList">
+                <a class="active" href="#look">Search for a plansitter</a>
+            </li>
+            <li class="menuList">
+                <a class="active" href="#work">Work as a plantsitter</a>
+            </li>
+            <div class="dropdown">
+                <button class="dropbtn" onClick="mobileMenuLogin()">
+                    <i id="userIcon" class="fas fa-user"></i> Login
+                </button>
+                <div class="dropdown-content" id="dropdown-content2">
+
+                    <a href="#" class="active">Login</a>
+
+                    <a href="#" class="active">Create an Account</a>
+                </div>
+            </div>
+
+    </header>
+    <div class="mainBody">
+        <div class="topDiv" id="topDiv">
+            <h1>Bringing plant lovers and plantsitters together</h1>
+            <h2>Simply, safely and directly</h2>
+            <div class="buttonDiv">
+                <button class="landingButton" type="button">Find a plantsitter</button>
+                <button class="landingButton" type="button"> Find work </button>
+            </div>
+
+        </div>
+        <h3> What do you get?</h3>
+        <div class="row">
+            <div class="column">
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> Largest selection of plantsitters and families on the internet
+                </li>
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> Immediate contact after registration</li>
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> Easy search based on your own preferences</li>
+            </div>
+            <div class="column">
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> A securely managed web environment from the market leader</li>
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> A contract template</li>
+                <li class="frontList">
+                    <i class="fas fa-leaf"></i> Multilingual customer support in all matters</li>
+            </div>
+        </div>
+        <h4> So many happy customers and many well-cared-for plants! Find a lovely plantsitter today!</h4>
+        <h3> How does it work?</h3>
+        <div class="row2">
+            <div class="picDiv">
+                <i class="fas fa-id-badge fa-5x"></i>
+                <p>Ceate a profile</p>
+
+            </div>
+            <div class="picDiv">
+                <i class="fas fa-search fa-5x"></i>
+                <p>Search for a plantsitter</p>
+            </div>
+            <div class="picDiv">
+                <i class="far fa-edit fa-5x"></i>
+                <p>Make contact</p>
+            </div>
+            <div class="picDiv">
+                <i class="fas fa-signature fa-5x"></i>
+                <p>Sign a contract</p>
+            </div>
+            <div class="picDiv">
+                <i class="fas fa-suitcase-rolling fa-5x"></i>
+                <p>Go on holiday worry free!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column2">
+
+                <i id="iconRe" class="far fa-leaf-heart fa-5x"></i>
+
+                <h3>For plantsitters</h3>
+                <p>Earn money easy by taking care of plants! Caring plantowners are willing to pay good money to lovely plantsitters
+                    who can offer not only regular watering, but also love and affection for their beloved plants. Learn
+                    more
+                </p>
+                <button class="registerButton" type="button"> Register now </button>
+            </div>
+            <div class="column2">
+                <i id="iconRe" class="far fa-hand-holding-seedling fa-5x"></i>
+                <h3>For plant owners</h3>
+                <p>Tired of finding your green babies all brown and dry after coming back from a holiday? Worry no more! Find
+                    a lovely plantsitter to take care of your plants while you away. Our plantsitters offer not only watering
+                    and caring, but also live updates about your plant state.
+                </p>
+                <button class="registerButton" type="button"> Register now </button>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer1">
+            <div class="questioNText">
+                <div class="text1"> Do you have any questions?</div>
+                <div>Contact our Plantsitting.de team by phone or email. We will be more than happy to help you.</div>
+            </div>
+
+            <button class="contactUs" type="button"> Contact us </button>
+        </div>
+        <div class="footer2-2">
+            <div class="footer2">
+                <div class="questioNText1">
+                    <div>Icon made by
+                        <a class="reference" href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from
+                        <a class="reference" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+                    </div>
+                    <div>Photo by
+                        <a class="reference" href="https://unsplash.com/@kaufmann_mercantile">Kaufmann Mercantile</a> on
+                        <a class="reference" href="https://unsplash.com/">Unsplash</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        window.onresize = () => {
+            const menu = document.getElementById("main-menu");
+            menu.style.display = "flex";
+            const content1 = document.getElementById("dropdown-content1");
+            const content2 = document.getElementById("dropdown-content2");
+            content1.style.display = "none";
+            content2.style.display = "none";
+        };
+        mobileMenu = () => {
+            const topDiv = document.getElementById("topDiv");
+
+            topDiv.classList.add("sticky2");
+
+            const menu = document.getElementById("main-menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "flex";
+
+            } else if (menu.style.display === "flex") {
+                menu.style.display = "none";
+                topDiv.classList.remove("sticky2");
+            }
+            else {
+                menu.style.display = "flex";
+            }
+        }
+
+        mobileMenuAbout = () => {
+            if (window.innerWidth < 800) {
+
+                const mainMenu = document.getElementById("main-menu");
+                const content1 = document.getElementById("dropdown-content1");
+                mainMenu.classList.add("sticky3");
+
+                if (content1.style.display === "none") {
+                    content1.style.display = "flex";
+                    check = true;
+
+                } else if (content1.style.display === "flex") {
+                    content1.style.display = "none";
+                    mainMenu.classList.remove("sticky3");
+
+                }
+                else {
+                    content1.style.display = "flex";
+                }
+            }
+        }
+        mobileMenuLogin = () => {
+            if (window.innerWidth < 800) {
+
+                const mainMenu = document.getElementById("main-menu");
+                const content2 = document.getElementById("dropdown-content2");
+                mainMenu.classList.add("sticky4");
+
+                if (content2.style.display === "none") {
+                    content2.style.display = "flex";
+
+                } else if (content2.style.display === "flex") {
+                    content2.style.display = "none";
+                    mainMenu.classList.remove("sticky4");
+                }
+                else {
+                    content2.style.display = "flex";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- <div>Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
