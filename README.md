@@ -6,5 +6,5 @@ So far I have implemented:
     responsive menu
     responsive design for mobile phones and large displays (some in-between options are missing).
     
-    ![screeshot of the clock](clock_screeshot.png)
+    ![screeshot](screenshot.png)
     
