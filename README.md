@@ -11,5 +11,7 @@ So far I have implemented:
     responsive design for mobile phones and large displays (some in-between options are missing).
     
     
-    ![screeshot](screenshot.png)
+![screeshot](screenshot.png)
+
+    
     
